@@ -6,23 +6,27 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="producto")
+@Table(name = "producto")
 
 public class Producto implements Serializable {
-    
-    private static final long serialVersionUID=1l;
-    
+
+    private static final long serialVersionUID = 1l;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id_producto")
+    @Column(name = "id_producto")
     private Long idProducto;
-    private Long idCategoria;
+    //Ya no se utiliza porque esta el manytoone private Long idCategoria;
     private String descripcion;
     private String detalle;
     public double precio;
     public int existencias;
     private String rutaImagen;
     private boolean activo;
+
+    @ManyToOne
+    @JoinColumn(name = "id_Categoria")
+    Categoria categoria;
 
     public Producto() {
     }
@@ -35,6 +39,5 @@ public class Producto implements Serializable {
         this.rutaImagen = rutaImagen;
         this.activo = activo;
     }
-    
-    
+
 }
