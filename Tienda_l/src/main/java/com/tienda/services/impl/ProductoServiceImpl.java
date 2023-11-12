@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 
-public class ProductosServiceImpl implements ProductoService{
+public class ProductoServiceImpl implements ProductoService{
     
     @Autowired
     private ProductoDao productoDao;
@@ -45,5 +45,30 @@ public class ProductosServiceImpl implements ProductoService{
         productoDao.delete(producto);
     }
     
+    @Override
+    @Transactional(readOnly=true)
+    public List<Producto> consultaQuery(
+            double precioInf,
+            double precioSup) {
+    return productoDao.findByPrecioBetweenOrderByDescripcion(0, 0);
+    }
+    
+    @Override
+    @Transactional(readOnly=true)
+    public List<Producto> consultaJPQL(
+            double precioInf,
+            double precioSup) {
+    return productoDao.consultaJPQL(0, 0);
+    }
+    
+       @Override
+    @Transactional(readOnly=true)
+    public List<Producto> consultaSQL(
+            double precioInf,
+            double precioSup) {
+    return productoDao.consultaJPQL(0, 0);
+    }
+    
+
     
 }

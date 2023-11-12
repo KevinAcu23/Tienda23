@@ -16,8 +16,9 @@ import org.springframework.web.multipart.MultipartFile;
 @RequestMapping("/categoria")
 public class CategoriaController {
     
-    @Autowired
+   @Autowired
     private CategoriaService categoriaService;
+
     
     @GetMapping("/listado")
     public String listado(Model model) {
