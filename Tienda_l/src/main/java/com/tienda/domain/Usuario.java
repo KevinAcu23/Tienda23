@@ -22,12 +22,17 @@ public class Usuario implements Serializable {
     private String nombre;
     private String apellidos;
     private String telefono;
+    private String correo;
     private String rutaImagen;
     private boolean activo;
     
     @OneToMany
     @JoinColumn(name="id_usuario",updatable=false)
     List<Rol> roles;
+
+    public Long getIdUsuario() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 
    
