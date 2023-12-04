@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ventas" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c35f3c62-9439-4fd5-b5c3-fdb4c7719020">
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ventas" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1335bd8b-ecbf-4ad8-839a-b207ad36f506">
 	<property name="com.jaspersoft.studio.data.sql.tables">
-		<![CDATA[dGVjaHNob3AuZmFjdHVyYSBBUyAsMjIyLDMyMCxhZTQ1ZGFkMy03OGYwLTQyZTgtOTY2NS1kODlm
-NGQ4NGQzNjA7dGVjaHNob3AudmVudGEgQVMgLDI2Miw4NixhN2JlOTliZi00ZjY1LTRjM2YtODI0
-ZS1hMWZhODBlZjdiMjY7dGVjaHNob3AucHJvZHVjdG8gQVMgLDkwLDY3LDY5M2RkNjFiLTZlNDEt
-NDBmMi05ZDYwLTViYTI4ZDU5Y2U3NTt0ZWNoc2hvcC51c3VhcmlvIEFTICwxNywzMzgsY2JhNzYw
-NzQtMGFjZi00OWJkLTg1NjgtMWUxNjFmMDFmZTQzOw==]]>
+		<![CDATA[dGVjaHNob3AuZmFjdHVyYSBBUyAsNDI1LDIyNywxOGJlNDkwNC1lNjNiLTQwMzYtODUwOC1iNWUy
+YzgyMjY2OTI7dGVjaHNob3AudmVudGEgQVMgLDI5MSwxOTUsZWI4YWYwNmYtYTU3NC00ODVjLTk1
+ZDUtNjBjN2E5MzMwNzdkO3RlY2hzaG9wLnByb2R1Y3RvIEFTICw4MSwxOTEsNzMxYWMyZjAtMGZl
+Mi00YjIxLWJjNmEtOWUzOTQxN2E1MDEwO3RlY2hzaG9wLnVzdWFyaW8gQVMgLDU2OSwyMjMsZmZh
+YmU3NjgtNDA0MS00Mzg5LWEwNWQtMjNlOGNhZmY1YmZmOw==]]>
 	</property>
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Tecshop"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="295"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="696"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="TechShop"/>
 	<queryString language="SQL">
 		<![CDATA[SELECT techshop.producto.descripcion,
 	techshop.venta.precio,
@@ -60,16 +62,16 @@ FROM techshop.venta
 	<title>
 		<band height="72">
 			<frame>
-				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="205d8ce1-e938-430f-a5df-5cfb03332db0"/>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="8c2ebfe6-a717-45e8-bb03-4686182e28e9"/>
 				<staticText>
-					<reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF" uuid="e978d1d4-fbd3-4a81-9f0b-b1ffd4d4ecdf"/>
+					<reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF" uuid="4d2ce149-090f-4bac-b4a9-9ae39a847f9e"/>
 					<textElement>
 						<font size="34" isBold="true"/>
 					</textElement>
 					<text><![CDATA[TITLE]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="18a28557-be8f-4f2c-a756-a9a4c429c90e"/>
+					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="587f0b92-4867-4dae-bb1b-d8a333ff704c"/>
 					<textElement textAlignment="Right">
 						<font size="14" isBold="false"/>
 					</textElement>
@@ -84,11 +86,11 @@ FROM techshop.venta
 	<columnHeader>
 		<band height="21">
 			<line>
-				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="7e663338-434d-481d-93b9-ffd7589965c8"/>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="9de3da4f-fc52-4030-9e18-b5448507a2cb"/>
 			</line>
 			<staticText>
-				<reportElement mode="Opaque" x="0" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="c49efd09-9f8a-42ee-b71a-9d65f6449857">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f9f6b276-617b-4b47-a3e3-e9e604f1905d"/>
+				<reportElement mode="Opaque" x="0" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="90d0bc3c-ab76-4d50-be12-1da378b2aebd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a1ec673f-69a6-4183-af2b-4a3d0ed55a04"/>
 				</reportElement>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
@@ -96,8 +98,8 @@ FROM techshop.venta
 				<text><![CDATA[fecha]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="92" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="5958bdd8-c189-4ac5-8b13-593a59e20fed">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="061614c1-6ad3-46eb-b5d3-262def5a4d05"/>
+				<reportElement mode="Opaque" x="92" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="44bcc59b-3d7b-422d-891b-ad0cd0557213">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c1e902ae-06c2-44cb-b1dc-3f84ed72c0e0"/>
 				</reportElement>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
@@ -105,8 +107,8 @@ FROM techshop.venta
 				<text><![CDATA[nombre]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="184" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="c68eb41c-3f47-4dfd-9365-53e77e4add78">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cb5b70b4-b386-4ee2-98b7-314c58267530"/>
+				<reportElement mode="Opaque" x="184" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="57e66d8e-a56c-4694-b0b4-83f2af40aad9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f27dd773-dd74-4f8e-a053-157e2c90a839"/>
 				</reportElement>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
@@ -114,8 +116,8 @@ FROM techshop.venta
 				<text><![CDATA[apellidos]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="276" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="a7c18ac5-4171-4835-8275-3d7e93a67460">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ee523bc2-5ee5-4e9c-a4c0-c476ddb71cd3"/>
+				<reportElement mode="Opaque" x="276" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="ffa25e9b-230f-4577-9371-870c089e8952">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8b02afa1-06ed-40ed-bde5-1f1bf9dcb079"/>
 				</reportElement>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
@@ -123,8 +125,8 @@ FROM techshop.venta
 				<text><![CDATA[descripcion]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="368" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="1c7d4cdd-1d59-45b3-bb6b-84d31faf67e5">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="54705c49-5feb-4f33-bf52-f7ce196f54b3"/>
+				<reportElement mode="Opaque" x="368" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="bda32399-ecf2-48c3-a48b-fde8eedd0e23">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e5231770-4703-49f2-bef4-d69a53f4f968"/>
 				</reportElement>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
@@ -132,8 +134,8 @@ FROM techshop.venta
 				<text><![CDATA[precio]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="460" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="f1667beb-1253-4443-b90e-7296fdd71b4f">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="459d1b4b-75e7-4632-bf5f-eb206a0bfaa5"/>
+				<reportElement mode="Opaque" x="460" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="c553d656-fad0-4121-8a77-908f8130f33a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6464d717-6830-457e-bf75-a33a66646cd2"/>
 				</reportElement>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
@@ -145,11 +147,11 @@ FROM techshop.venta
 	<detail>
 		<band height="20">
 			<line>
-				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="f20f22b3-dbcf-4e44-b3e9-cb60d54016b8"/>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="3547a900-3a2b-4744-a933-8328704d48fa"/>
 			</line>
 			<textField textAdjust="StretchHeight">
-				<reportElement x="0" y="0" width="92" height="20" uuid="2f32be61-d34a-43c3-a877-b31cfa904f38">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f9f6b276-617b-4b47-a3e3-e9e604f1905d"/>
+				<reportElement x="0" y="0" width="92" height="20" uuid="8524c536-9455-4768-bd79-93e691b31e3d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a1ec673f-69a6-4183-af2b-4a3d0ed55a04"/>
 				</reportElement>
 				<textElement>
 					<font size="14"/>
@@ -157,8 +159,8 @@ FROM techshop.venta
 				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement x="92" y="0" width="92" height="20" uuid="aefdd33f-5f98-41e2-9e06-fdeed080bf66">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="061614c1-6ad3-46eb-b5d3-262def5a4d05"/>
+				<reportElement x="92" y="0" width="92" height="20" uuid="e69b6750-77cd-42be-8f18-d5d8b336a3fa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c1e902ae-06c2-44cb-b1dc-3f84ed72c0e0"/>
 				</reportElement>
 				<textElement>
 					<font size="14"/>
@@ -166,8 +168,8 @@ FROM techshop.venta
 				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement x="184" y="0" width="92" height="20" uuid="577fd4d7-3253-4c1d-94c1-fee1f5484fce">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cb5b70b4-b386-4ee2-98b7-314c58267530"/>
+				<reportElement x="184" y="0" width="92" height="20" uuid="58fdbef9-7899-4a00-8b11-3524efe8768b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f27dd773-dd74-4f8e-a053-157e2c90a839"/>
 				</reportElement>
 				<textElement>
 					<font size="14"/>
@@ -175,8 +177,8 @@ FROM techshop.venta
 				<textFieldExpression><![CDATA[$F{apellidos}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement x="276" y="0" width="92" height="20" uuid="3929d285-3e87-4ac6-bcdc-caca7f112ab6">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ee523bc2-5ee5-4e9c-a4c0-c476ddb71cd3"/>
+				<reportElement x="276" y="0" width="92" height="20" uuid="e0c8575f-9f04-44c0-aa61-ca99e2043385">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8b02afa1-06ed-40ed-bde5-1f1bf9dcb079"/>
 				</reportElement>
 				<textElement>
 					<font size="14"/>
@@ -184,8 +186,8 @@ FROM techshop.venta
 				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement x="368" y="0" width="92" height="20" uuid="d92413db-c225-44c7-9e9a-a6e067f99a9a">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="54705c49-5feb-4f33-bf52-f7ce196f54b3"/>
+				<reportElement x="368" y="0" width="92" height="20" uuid="0c4b8825-5ad6-4ec2-b771-c7cf61eba75f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e5231770-4703-49f2-bef4-d69a53f4f968"/>
 				</reportElement>
 				<textElement>
 					<font size="14"/>
@@ -193,8 +195,8 @@ FROM techshop.venta
 				<textFieldExpression><![CDATA[$F{precio}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement x="460" y="0" width="92" height="20" uuid="fa6d035a-5e1d-4edf-8ef3-f82bc84e5824">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="459d1b4b-75e7-4632-bf5f-eb206a0bfaa5"/>
+				<reportElement x="460" y="0" width="92" height="20" uuid="2342674f-ffde-4cea-9c7f-264297695999">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6464d717-6830-457e-bf75-a33a66646cd2"/>
 				</reportElement>
 				<textElement>
 					<font size="14"/>
@@ -209,16 +211,16 @@ FROM techshop.venta
 	<pageFooter>
 		<band height="17">
 			<textField>
-				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="d87ec4cf-8187-4a97-a246-4a98eafea558"/>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="17735bb9-182e-45a5-ae70-2409fd5296d8"/>
 				<textElement textAlignment="Right"/>
 				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="7c648fa2-1ac4-424b-8026-3440bc728fca"/>
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="afc95057-4399-4b5a-836d-8f9bf3e50107"/>
 				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 			<textField pattern="EEEEE dd MMMMM yyyy">
-				<reportElement x="0" y="4" width="100" height="13" uuid="cb571a86-af2c-4853-ab65-dc2bd021d42b"/>
+				<reportElement x="0" y="4" width="100" height="13" uuid="e870ceb1-5e4d-44e1-9f51-1ad5a422f505"/>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 		</band>
